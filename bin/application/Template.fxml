@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="700.0" prefWidth="1300.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Button fx:id="btnSetTrainingDir" layoutX="20.0" layoutY="100.0" mnemonicParsing="false" onAction="#btnSetTrainingDir_OnAction" prefHeight="45.0" prefWidth="200.0" text="1. Select Training Data Folder" />
+            <Button fx:id="btnSetTestingDir" disable="true" layoutX="385.0" layoutY="100.0" mnemonicParsing="false" onAction="#btnSetTestingDir_OnAction" prefHeight="45.0" prefWidth="200.0" text="2. Select Test Image" />
+            <Button fx:id="btnClassifyTestData" disable="true" layoutX="730.0" layoutY="100.0" mnemonicParsing="false" onAction="#btnClassifyTestData_OnAction" prefHeight="45.0" prefWidth="200.0" text="3. Classify Using K-NN" />
+            <ImageView fx:id="ivOriginalImage" fitHeight="142.0" fitWidth="294.0" layoutX="359.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lblOriginalImage" layoutX="385.0" layoutY="166.0" prefHeight="27.0" prefWidth="133.0" text="1.Grayscale Image" textAlignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <ImageView fx:id="ivMedianBlurImage" fitHeight="142.0" fitWidth="294.0" layoutX="719.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lblMedianBlur" layoutX="719.0" layoutY="169.0" prefHeight="17.0" prefWidth="160.0" text="2.Median Blur">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="lblHistogramEqualisation" layoutX="20.0" layoutY="378.0" prefHeight="27.0" prefWidth="211.0" text="3.Histogram Equalisation">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <ImageView fx:id="ivHistogramEqualisation" fitHeight="142.0" fitWidth="294.0" layoutX="35.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lblAdaptiveThreshold" layoutX="385.0" layoutY="364.0" prefHeight="27.0" prefWidth="187.0" text="4.Adaptive Threshold">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <ImageView fx:id="ivAdaptiveThreshold" fitHeight="142.0" fitWidth="294.0" layoutX="371.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="ivCannyEdgeDetection" fitHeight="142.0" fitWidth="294.0" layoutX="711.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lblCannyEdgeDetection" layoutX="711.0" layoutY="364.0" prefHeight="27.0" prefWidth="219.0" text="5.Canny Edge Detection">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="lblNoteValue" layoutX="1141.0" layoutY="96.0" prefHeight="53.0" prefWidth="52.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTitle" layoutX="247.0" layoutY="21.0" text="South African Bank Note Recognition" textAlignment="CENTER">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+            <Separator layoutX="10.0" layoutY="86.0" prefHeight="1.0" prefWidth="1181.0" />
+            <Label fx:id="lblDisplayImages" layoutX="267.0" layoutY="550.0" prefHeight="36.0" prefWidth="715.0" text="Display of Enhancements &amp; Segmentation Techniques" textAlignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCurrency" layoutX="953.0" layoutY="109.0" text="Recognised Currency R ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblOriginalColourImage" layoutX="20.0" layoutY="166.0" prefHeight="27.0" prefWidth="211.0" text="0.Original Image">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="ivOriginalColourImage" fitHeight="142.0" fitWidth="294.0" layoutX="35.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="ivPlotHist" fitHeight="142.0" fitWidth="294.0" layoutX="909.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
