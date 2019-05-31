@@ -9,6 +9,8 @@ Implementation of a robust image processing system is completed which classifies
 
 Details:
 Programming Lanauge: Java
+
 Sotware Platform: JavaFX
+
 Library: OpenCV (library employed for the use of real-time computer vision applications)
 
