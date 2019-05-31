@@ -7,7 +7,7 @@ orientation of the note can either be upright or up-side-down.
 
 Implementation of a robust image processing system is completed which classifies each input bank note image appropriately. 
 
-Details:
+
 Programming Lanauge: Java
 
 Sotware Platform: JavaFX
